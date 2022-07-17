@@ -98,3 +98,13 @@ while True:
     print("Your WINs: " + str(player_wins))
     print("Computer WINs: " + str(cpu_wins))
     print("")
+
+    user_choice = input("Would you like to play again? (Y/N): \n")
+    if user_choice in ["Y", "y", "Yes", "yes"]:
+        pass
+    elif user_choice in ["N", "n", "No", "no"]:
+        print("Thank you for playing!")
+        print("Have a nice day! \n")
+        break
+    else:
+        break
