@@ -92,5 +92,9 @@ while True:
             print("You chose SCISSORS! The computer chose PAPER. You WON!")
             player_wins += 1
         elif cpu_choice == "s":
-            print("You chose PAPER! The computer chose SCISSORS. You LOST!")
-            cpu_wins += 1
+            print("You chose SCISSORS! The computer chose SCISSORS. You TIED!")
+    
+    print("")
+    print("Your WINs: " + str(player_wins))
+    print("Computer WINs: " + str(cpu_wins))
+    print("")
