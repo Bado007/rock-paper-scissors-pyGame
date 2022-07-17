@@ -23,7 +23,7 @@ print(hello_msg_border)
 
 
 # Player choice function
-def choose_weapon():
+def player_weapon():
     """
     This function defines the users choice of "the weapon" and
     converts it into lowercase. So regardles what user types the
@@ -58,3 +58,39 @@ def computer_weapon():
     else:
         cpu_choice = "s"
     return cpu_choice
+
+# While loop for comparing results 
+while True:
+    print("")
+    user_choice = player_weapon()
+    cpu_choice = computer_weapon()
+    print("")
+
+    if user_choice == "r":
+        if cpu_choice == "r":
+            print("You chose ROCK! The computer chose ROCK. You TIED!")
+        elif cpu_choice == "p":
+            print("You chose ROCK! The computer chose PAPER. You LOST!")
+            cpu_wins += 1
+        elif cpu_choice == "s":
+            print("You chose ROCK! The computer chose SCISSORS. You WON!")
+            player_wins += 1
+    elif user_choice == "p":
+        if cpu_choice == "r":
+            print("You chose PAPER! The computer chose ROCK. You WON!")
+            player_wins += 1
+        elif cpu_choice == "p":
+            print("You chose PAPER! The computer chose PAPER. You TIED!")
+        elif cpu_choice == "s":
+            print("You chose PAPER! The computer chose SCISSORS. You LOST!")
+            cpu_wins += 1
+    elif user_choice == "s":
+        if cpu_choice == "r":
+            print("You chose SCISSORS! The computer chose ROCK. You LOST!")
+            cpu_wins += 1
+        elif cpu_choice == "p":
+            print("You chose SCISSORS! The computer chose PAPER. You WON!")
+            player_wins += 1
+        elif cpu_choice == "s":
+            print("You chose PAPER! The computer chose SCISSORS. You LOST!")
+            cpu_wins += 1
