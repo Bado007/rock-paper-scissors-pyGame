@@ -1,19 +1,18 @@
 # Rock Paper Scissors terminal game.
 
-import random 
+import random
 
 
-# define variables for the game 
+# define variables for the game
 cpu_wins = 0
-player_wins = 0 
+player_wins = 0
+
 
 # Welcome Message
-
 hello_msg_border = "======================================================="
 hello_msg_text = "Hello! Welcome to Terminal game ROCK, PAPER, SCISSORS!"
 hello_msg_excited = "Are you ready to get started?"
 hello_msg_ready = "Because your opponent is already warming up!"
-
 
 print(hello_msg_border)
 print(hello_msg_text)
@@ -26,7 +25,7 @@ print(hello_msg_border)
 def player_weapon():
     """
     This function defines the users choice of "the weapon" and
-    converts it into lowercase. So regardles what user types the
+    converts it into lowercase. So regardles what user types, the
     function is going to understand it as the first letter of the
     weapon + in lowercase.
     """
@@ -38,9 +37,10 @@ def player_weapon():
     elif user_choice in ["Scissors", "scissors", "S", "s"]:
         user_choice = "s"
     else:
-        print("You entered wrong value, try again.")
-        choose_weapon()
+        print("You entered wrong value, try again. \n")
+        player_weapon()
     return user_choice
+
 
 # Computer choice function
 def computer_weapon():
@@ -59,7 +59,8 @@ def computer_weapon():
         cpu_choice = "s"
     return cpu_choice
 
-# While loop for comparing results 
+
+# While loop for comparing results
 while True:
     print("")
     user_choice = player_weapon()
@@ -93,14 +94,13 @@ while True:
             player_wins += 1
         elif cpu_choice == "s":
             print("You chose SCISSORS! The computer chose SCISSORS. You TIED!")
-    
     print("")
     print("Your WINs: " + str(player_wins))
     print("Computer WINs: " + str(cpu_wins))
     print("")
 
     user_choice = input("Would you like to play again? (Y/N): \n")
-    if user_choice in ["Y", "y", "Yes", "yes"]:
+    if user_choice in ["Y", "y", "Yes", "yes", "yeah", "yep"]:
         pass
     elif user_choice in ["N", "n", "No", "no"]:
         print("Thank you for playing!")
