@@ -1,3 +1,0 @@
-# Your requirements go here
-run.py
-package.json
