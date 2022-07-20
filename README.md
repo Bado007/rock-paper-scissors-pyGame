@@ -79,5 +79,16 @@ Remaining Bugs:
 This project used Code Institute's mock terminal for [Heroku](https://www.heroku.com/home) terminal.
 
 Steps for deployment:
+- Use Code Institute's python template.
+- Create new Heroku app.
+- Set buildbacks to Python and NodeJs in that order.
+- Link the Heroku app to this repository.
+- Click on Deploy.
 
+## Credits 
 
+- Instagram [python.learning](https://www.instagram.com/python.learning/) - tricks and ideas.
+- [Code Institute](https://codeinstitute.net/) - template and course contents.
+- [Mosh Hamedani](https://codewithmosh.com/) - great explanation of python syntax.
+- [Kalle Hallden](https://www.youtube.com/c/KalleHallden/videos) - awesome videos with explenations.
+- [W3Schools](https://www.w3schools.com/python/python_for_loops.asp) - detailed explanations and runnable examples.
